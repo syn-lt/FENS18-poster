@@ -18,7 +18,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %-----------------------------------------------------------------------------
 \pdfminorversion=4
-\documentclass[a0,portrait]{a0poster}
+\documentclass[a0,landscape]{a0poster}
 
 %% % sans-serif config:
 
@@ -100,18 +100,18 @@
 % The first is 75% wide and houses the title, subtitle, names, university/organization and contact information
 % The second is 25% wide and houses a logo for your university/organization or a photo of you
 % The widths of these boxes can be easily edited to accommodate your content as you see fit
-\vspace{-5cm}
+%\vspace{-6cm}
 
 %\fbox{
 \begin{minipage}[b]{0.75\linewidth}
+\vspace{-0.5cm}   
   \veryHuge \textbf{Modelling synaptic lifetime distributions with Kesten processes} \color{Black}\\[1.5cm] 
 %\Huge\textit{}\\[2cm] % Subtitle
   \huge \textbf{Felix Z.~Hoffmann$^{1,2}$, Daniel Miner$^{1,3}$, Jochen Triesch$^1$}\\[0.5cm] % Author(s)
 \large $\quad ^1$ Frankfurt Institute for Advanced Studies (FIAS), Johann Wolfgang Goethe University, Frankfurt am Main, Germany\\[0.2cm] % University/organization
-$\quad ^2$ International Max Planck Research School for Neural Circuits, Max Planck Institute for Brain Research, Frankfurt am \\\textcolor{white}{x} Main, Germany\\
+$\quad ^2$ International Max Planck Research School for Neural Circuits, Max Planck Institute for Brain Research, Frankfurt am Main, Germany\\[0.2cm]
 $\quad ^3$ Third Institute of Physics, Universität Göttingen, Göttingen, Germany
 \\[0.4cm]
-\Large \texttt{hoffmann@fias.uni-frankfurt.de}\\
 \end{minipage}
 %}
 %
@@ -121,19 +121,22 @@ $\quad ^3$ Third Institute of Physics, Universität Göttingen, Göttingen, Germ
   
   %% \includegraphics[width=10cm]{goethe-logo.pdf}\\
   %% \vspace{2.8cm}
-  \vspace{-10cm}
-  \includegraphics[width=12cm]{spp2041_logo.pdf}\\
-  \vspace{2.2cm}
-  \includegraphics[width=13.5cm]{FIAS-logo.pdf}\\
-  \vspace{5.5cm}
+  \vspace{-9cm}
   
+  \includegraphics[width=11cm]{spp2041_logo.pdf}
+  \hspace{2.2cm}
+  \includegraphics[width=12.5cm]{FIAS-logo.pdf}\\
+
+  \vspace{2cm}
+  \Large \texttt{hoffmann@fias.uni-frankfurt.de}\\
+  \vspace{3cm}
 \end{minipage}
 %}
 \vspace{-1.5cm} % A bit of extra whitespace between the header and poster content
 
 %-----------------------------------------------------------------------------
 
-\begin{multicols}{2} % This is how many columns your poster will be
+\begin{multicols}{3} % This is how many columns your poster will be
                      % broken into, a portrait poster is generally
   % split into 2 columns
   \input{sections/introduction}
