@@ -1,4 +1,4 @@
-\begin{minipage}{\columnwidth}
+
 \section*{Results}
 \vspace{-0.1cm}
 We simulated $N= \,\,$\SI{5e5} synapses evolving as Kesten processes and recorded lifetime and weight distributions. First, we systemically tested the effect of the distribution parameters on lifetime and weight distributions. We found that within parameter ranges as for example used in the Kesten model of \textcite{Statman2014}, the variance of the multiplicative component $\sigma_a^2$ has negligible effect on lifetime and weight distributions. This allowed us to further reduce the Kesten model in complexity and allowed us to consider an autoregressive AR(1) process of the form
@@ -29,7 +29,7 @@ where $a \in (0,1)$ and $b_n \sim \mathcal{N}(\mu_b, \sigma_b^2)$ instead. The m
 %%   \captionof{figure}{}
 %%   \label{fig:lifetimes}
 %% \end{center}\vspace{1cm}
-
+\begin{minipage}{\columnwidth}
 We found the variance $\sigma_b^2$ of the additive component to have little effect on both the lifetime and spine size distributions. Interestingly however, the bias in the additive change affects both distributions significantly. A positive bias towards increases in size moves the tail of the lifetime distribution towards higher lifetimes (Fig.~\ref{fig:lifemub}A) while shifting the mean of the spine size towards higher values (Fig.~\ref{fig:lifemub}B). 
 
 \vspace{1.5cm}
