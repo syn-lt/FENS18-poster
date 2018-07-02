@@ -1,7 +1,7 @@
 \section{Introduction}
 \vspace{-0.2cm}
 
-The wiring of cortical circuits is highly dynamic. Spine sizes fluctuate even in the absence of neural activity and there is constant synaptic turnover \cite{Loewenstein2015}. In models of cortical circuits, two major mechanisms are typically considered to drive the efficacies of synaptic connections: Spike-timing dependent plasticity (STDP) is often assumed to strengthen or weaken synaptic connections in an additive manner, independent of the current weight. Synaptic normalization, on the other hand, acts multiplicatively on synapses by scaling their efficacies by a varying factor that depends on the availability of synaptic resources \cite{Triesch2017} (see Fig.~\ref{fig:spines}).
+The wiring of cortical circuits is highly dynamic. Spine sizes fluctuate even in the absence of neural activity and there is constant synaptic turnover \cite{Loewenstein2015}. In models of cortical circuits, two major mechanisms are typically considered to drive the efficacies of synaptic connections: Spike-timing dependent plasticity (STDP) is often assumed to strengthen or weaken synaptic connections in an additive manner, independent of the current weight. Synaptic normalization, on the other hand, acts multiplicatively on synapses by scaling their efficacies by a varying factor that might depend on the availability of synaptic resources \cite{Triesch2017} (see Fig.~\ref{fig:spines}).
 
 
 
@@ -13,7 +13,7 @@ The wiring of cortical circuits is highly dynamic. Spine sizes fluctuate even in
 \end{center}\vspace{2cm}
 
 
-To model the fluctuations of synaptic spine sizes over time, a stochastic process called Kesten process has been suggested \cite{Kesten1973, Statman2014}. In this process, a random variable $X_n$ at time step $n$ is updated by scaling it with a random multiplicative factor $a_n$ and then adding a random increment $b_n$ according to
+To model fluctuations of synaptic spine sizes over time, a stochastic process called Kesten process has been suggested \cite{Kesten1973, Statman2014}. In this process, a random variable $X_n$ at time step $n$ is updated by scaling it with a random multiplicative factor $a_n$ and then adding a random increment $b_n$ according to
 %
 \begin{align}
   X_{n+1} = a_n X_n + b_n. \label{eq:kesten}

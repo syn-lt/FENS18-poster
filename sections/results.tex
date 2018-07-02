@@ -7,7 +7,7 @@ We simulated $N= \,\,$\SI{5e5} synapses evolving as Kesten processes and recorde
   X_{n+1} = a\, X_n + b_n, \label{eq:ar1}
 \end{align}
 %
-where $a \in (0,1)$ and $b_n \sim \mathcal{N}(\mu_b, \sigma_b^2)$ instead. The mean of the multiplicative component $\mu_a$ does affect both weight and lifetime distributions significantly and we found that biological realistic distributions arise when $\mu_a$ is close to $1$, as for in example in \cite{Statman2014} ($\mu_a \approx 0.99$). Indeed, in match with experimental data \cite{Loewenstein2015, Song2005} and predictions from network simulations \cite{Zheng2013} we found that for unbiased additive change ($\mu_b =0$), a power law like distribution of synaptic lifetimes emerges (Fig.~\ref{fig:lifetimes}A), while the distribution of spine sizes $X_{T_{\text{max}}}$ resembles a log-normal distribution.
+where $a \in (0,1)$ and $b_n \sim \mathcal{N}(\mu_b, \sigma_b^2)$ instead. The mean of the multiplicative component $\mu_a$ does affect both weight and lifetime distributions significantly and we found that biological realistic distributions arise when $\mu_a$ is close to $1$, as for in example in \cite{Statman2014} ($\mu_a \approx 0.99$). Indeed, in match with experimental data \cite{Loewenstein2015, Song2005} and predictions from network simulations \cite{Zheng2013} we found that for unbiased additive change ($\mu_b =0$), a power law-like distribution of synaptic lifetimes emerges (Fig.~\ref{fig:lifetimes}A), while the distribution of spine sizes $X_{T_{\text{max}}}$ resembles a lognormal distribution.
 
 \vspace{1cm}
 \begin{overpic}[width=\columnwidth]%
@@ -17,7 +17,7 @@ where $a \in (0,1)$ and $b_n \sim \mathcal{N}(\mu_b, \sigma_b^2)$ instead. The m
   \put(1,28){\normalfont \textbf{A}}
   \put(52,28){\normalfont \textbf{B}}
 \end{overpic}
-\captionof{figure}[format=hang,indention=1cm]{Dynamical properties of network connectivity modelled by AR(1) process as in \eqref{eq:ar1}. \textbf{A} Lifetime distribution of synapses created at time step $T_{\text{init}}$ uniformly distributed in $[0, T_{\text{max}}]$. \textbf{B} Distribution of spine sizes $X_{T_{\text{max}}}$ at time step $X_{T_{\text{max}}}$ (grey) and log-normal fit (red). Parameters for both: $a=0.9987$, $\mu_b=0$, $\sigma_b^2=0.22$, $X_{\text{insert}}=0.1$, $X_{\text{prune}}=0.01$. \label{fig:lifetimes}}
+\captionof{figure}[format=hang,indention=1cm]{Dynamical properties of network connectivity modelled by AR(1) process as in \eqref{eq:ar1}. \textbf{A} Lifetime distribution of synapses created at time step $T_{\text{init}}$ uniformly distributed in $[0, T_{\text{max}}]$. \textbf{B} Distribution of spine sizes $X_{T_{\text{max}}}$ at time step $X_{T_{\text{max}}}$ (grey) and lognormal fit (red). Parameters for both: $a=0.9987$, $\mu_b=0$, $\sigma_b^2=0.22$, $X_{\text{insert}}=0.1$, $X_{\text{prune}}=0.01$. \label{fig:lifetimes}}
 
 \vspace{2.5cm}
 
