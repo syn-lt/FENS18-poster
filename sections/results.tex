@@ -7,7 +7,7 @@ We simulated $N= \,\,$\SI{5e5} synapses evolving as Kesten processes and recorde
   X_{n+1} = a\, X_n + b_n, \label{eq:ar1}
 \end{align}
 %
-where $a \in (0,1)$ and $b_n \sim \mathcal{N}(\mu_b, \sigma_b^2)$ instead. The mean of the multiplicative component $\mu_a$ does affect both weight and lifetime distributions significantly and we found that biological realistic distributions arise when $\mu_a$ is close to $1$, as for in example in \cite{Statman2014} ($\mu_a \approx 0.99$). Indeed, in match with experimental data \cite{Loewenstein2015, Song2005} and predictions from network simulations \cite{Zheng2013} we found that for unbiased additive change ($\mu_b =0$), a power law-like distribution of synaptic lifetimes emerges (Fig.~\ref{fig:lifetimes}A), while the distribution of spine sizes $X_{T_{\text{max}}}$ resembles a lognormal distribution.
+where $a \in (0,1)$ and $b_n \sim \mathcal{N}(\mu_b, \sigma_b^2)$ instead. The mean of the multiplicative component $\mu_a$ does affect both weight and lifetime distributions significantly and we found that biologically realistic distributions arise when $\mu_a$ is close to $1$, as for example in \cite{Statman2014} ($\mu_a \approx 0.99$). Indeed, in match with experimental data \cite{Loewenstein2015, Song2005} and predictions from network simulations \cite{Zheng2013} we found that for unbiased additive change ($\mu_b =0$), a power law-like distribution of synaptic lifetimes emerges (Fig.~\ref{fig:lifetimes}A), while the distribution of spine sizes $X_{T_{\text{max}}}$ resembles a lognormal distribution.
 
 \vspace{1cm}
 \begin{overpic}[width=\columnwidth]%
@@ -30,7 +30,7 @@ where $a \in (0,1)$ and $b_n \sim \mathcal{N}(\mu_b, \sigma_b^2)$ instead. The m
 %%   \label{fig:lifetimes}
 %% \end{center}\vspace{1cm}
 \begin{minipage}{\columnwidth}
-We found the variance $\sigma_b^2$ of the additive component to have little effect on both the lifetime and spine size distributions. Interestingly however, the bias in the additive change affects both distributions significantly. A positive bias towards increases in size moves the tail of the lifetime distribution towards higher lifetimes (Fig.~\ref{fig:lifemub}A) while shifting the mean of the spine size towards higher values (Fig.~\ref{fig:lifemub}B). 
+  We found the variance $\sigma_b^2$ of the additive component to have little effect on both the lifetime and spine size distributions. Interestingly however, the bias in the additive change affects both distributions significantly. A bias towards increases in size ($\mu_b > 0$) moves the tail of the lifetime distribution towards higher lifetimes (Fig.~\ref{fig:lifemub}A) and shifts the mean of the spine size distribution towards higher values (Fig.~\ref{fig:lifemub}B). 
 
 \vspace{1.5cm}
 \begin{overpic}[width=\columnwidth]%

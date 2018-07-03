@@ -2,13 +2,13 @@
 \section{Network simulations}
 \vspace{-0.2cm}
 
-What parameters of a cortical circuit could match $\mu_b$ in the stochastic model and thus similarly shape the lifetime and weight distributions of synapses? To test this we simulated a detailed network model similar to \cite{Miner2016}. In the model we simulated $N_e = 400$ excitatory and $N_i = 80$ inhibitory leaky integrate-and-fire neurons with membrane noise over $T=\text{\SI{1000}{s}}$. Synapses are conductance based and network connections within the excitatory population are inserted randomly over time at a low weight and eliminated if the weight falls below a global threshold. Spike-timing dependent plasticity and slow multiplicative synaptic normalization drive the synapse dynamics. We found that a parameter $D$, defined as the ratio between potentiation and depression through spike-timing dependent plasticity in the network,
+What parameters of a cortical circuit could match $\mu_b$ in the stochastic model and thus similarly shape the lifetime and weight distributions of synapses? To test this we simulated a detailed network model similar to \cite{Miner2016}. In the model we simulated $N_e = 400$ excitatory and $N_i = 80$ inhibitory leaky integrate-and-fire neurons with membrane noise over $T=\text{\SI{1000}{s}}$. Synapses are conductance based and network connections within the excitatory population are inserted randomly over time at a low weight and eliminated if the weight falls below a global threshold. Spike-timing dependent plasticity and slow multiplicative synaptic normalization drive the synapse dynamics. We found that a parameter $D$, defined as integral of the STDP window for potentiation and divided by the integral of the STDP window for depression,
 %
 \begin{align}
-  D = \frac{|\text{synaptic potentiation}|}{|\text{synaptic depression}|},
+  D = \frac{\,\,\,\,A_{\text{LTP}}\, \tau_{\text{LTP}}}{-A_{\text{LTD}}\,\tau_{\text{LTD}}}, 
 \end{align}
 %
-shows a similar shaping of lifetime distributions in the network model (Fig.~\ref{fig:netwsim}A). We see however qualitatively different behaviour in the dynamics of the synaptic weight distributions (Fig.~\ref{fig:netwsim}B).
+where $A_{\text{LTP}}$, $A_{\text{LTD}}$ are the amplitudes and $\tau_{\text{LTP}}$, $\tau_{\text{LTD}}$ the time constants for STDP windows for potentiation and depression, shows a similar shaping of lifetime distributions in the network model (Fig.~\ref{fig:netwsim}A). We see however qualitatively different behaviour in the dynamics of the synaptic weight distributions (Fig.~\ref{fig:netwsim}B).
 
 \vspace{0.7cm}
 \begin{overpic}[width=\columnwidth]%
@@ -18,10 +18,10 @@ shows a similar shaping of lifetime distributions in the network model (Fig.~\re
   \put(1,28){\normalfont \textbf{A}}
   \put(52,28){\normalfont \textbf{B}}
 \end{overpic}
-\captionof{figure}{In detailed network simulations the synaptic lifetime and weight distributions are shaped by the overall ratio $D$ of synaptic potentiation and depression. \label{fig:netwsim}}
+\captionof{figure}{In detailed network simulations the synaptic lifetime and weight distributions are shaped by the overall ratio $D$ between synaptic potentiation and depression. \label{fig:netwsim}}
 \vspace{2.3cm}
 
-Interestingly, we find that a large number of other network parameters, such as for example membrane noise, do not affect the synaptic lifetimes. This points towards a fundamental relationship between the additive weight dynamics and the lifetimes of synapses.
+Interestingly, we find that a large number of other network parameters, such as membrane noise, do not affect the synaptic lifetimes. This points towards a fundamental relationship between the additive weight dynamics and the lifetimes of synapses.
 
 
 
